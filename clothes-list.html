@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圈圈穿搭 · 萌衣合集</title>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Nunito', 'PingFang SC', sans-serif; 
+            background-color: #fefbf6; 
+            color: #4a3125; 
+            padding-bottom: 3rem; 
+        }
+        a { text-decoration: none; color: inherit; }
+        
+        .back-home {
+            display: inline-block;
+            margin: 2rem 0 0 5%;
+            padding: 0.6rem 1.5rem;
+            background-color: #f3b33d;
+            color: #4a3125;
+            border-radius: 30px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .back-home:hover { background-color: #e8a838; color: white; }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #4a3125;
+            margin: 1.5rem 0 0.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #b8884c;
+            margin-bottom: 3rem;
+        }
+        
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0 5%;
+        }
+        .product-card {
+            background: #ffffff;
+            border-radius: 25px;
+            padding: 1.5rem;
+            width: 260px;
+            box-shadow: 0 8px 25px rgba(243, 179, 61, 0.12);
+            transition: 0.3s;
+            text-align: center;
+            border: 1px solid #fff3e0;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(243, 179, 61, 0.2);
+        }
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            background-color: #f9f3e8;
+        }
+        .product-card h3 { font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .product-card .price { color: #f3b33d; font-weight: 800; font-size: 1.2rem; margin-bottom: 0.8rem; }
+        .buy-btn {
+            display: inline-block;
+            background: #f3b33d;
+            color: #4a3125;
+            padding: 0.4rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .buy-btn:hover { background: #e8a838; color: white; }
+        
+        @media (max-width: 600px) { .product-card { width: 100%; max-width: 300px; } }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-home">⬅ 返回圈圈小屋首页</a>
+    
+    <h1>🐾 圈圈穿搭 · 萌衣合集</h1>
+    <p class="subtitle">多款暖萌宠物小衣，总有适合你家毛孩子的那一件</p>
+
+    <div class="product-grid">
+        <!-- 衣服1 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1548658166-136d9f6a7cf1?w=400&h=400&fit=crop" alt="宠物毛衣" class="card-img">
+            <h3>暖姜色针织毛衣</h3>
+            <div class="price">¥ 49.9</div>
+            <a href="https://www.example.com/item1" target="_blank" class="buy-btn">立即购买</a>
+        </div>
+        <!-- 衣服2 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1576201836106-018cd62b64ee?w=400&h=400&fit=crop" alt="宠物背心" class="card-img">
+            <h3>小熊印花护肚背心</h3>
+            <div class="price">¥ 39.9</div>
+            <a href="https://www.example.com/item2" target="_blank" class="buy-btn">立即购买</a>
+        </div>
+        <!-- 衣服3 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=400&fit=crop" alt="宠物雨衣" class="card-img">
+            <h3>透明防水小雨衣</h3>
+            <div class="price">¥ 59.9</div>
+            <a href="https://www.example.com/item3" target="_blank" class="buy-btn">立即购买</a>
+        </div>
+        <!-- 衣服4 -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1527623228056-5c3588d774cd?w=400&h=400&fit=crop" alt="宠物新年装" class="card-img">
+            <h3>喜庆中国红新装</h3>
+            <div class="price">¥ 69.9</div>
+            <a href="https://www.example.com/item4" target="_blank" class="buy-btn">立即购买</a>
+        </div>
+    </div>
+</body>
+</html>
